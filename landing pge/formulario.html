@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    
+       
+</head>
+<body>
+    
+<div class="container">
+<table>
+<tbody>
+    <form class="custom-form" id="formulario">
+        <h1 id="ins">Registrarse</h1>
+<!-- nombres -->
+        <tr><td> <div class="form-group">
+            <label for="nombre">Nombres</label>
+            <input type="text" class="form-group" id="nombre" placeholder="Ingrese Nombres" required>
+        </div></td></tr>
+<!-- apellidos -->
+        <tr><td><div class="form-group">
+            <label for="apellido">Apellidos</label>
+            <input type="text" class="form-group" id="apellido" placeholder="Ingrese Apellidos" required>
+        </div></td></tr>
+<!-- fecha de nacimiento -->
+        <tr><td><div class="form-group">
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" class="form-group" id="fecha">
+        </div></td></tr>
+
+<!-- telefono -->
+        <tr><td><div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label for="telefono">Teléfono de Contacto</label>
+                    <input type="cod" class="input-group-prepend" id="codigoArea" placeholder="+569" size="2" required>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ingrese Telefono" required>
+                </div>
+            </div>
+        </div><br></td></tr>
+<!-- enviar -->
+        <tr><td><button type="button" onclick="validarFormulario()" class="btn btn-primary">Enviar</button></td></tr>
+    </form>
+</tbody>
+</table>
+<h1>Registros:</h1>
+<div id="personas"></div>
+
+</div>
+    
+<script src="script/formulario.js"></script>
+</body>
+
+</html>
